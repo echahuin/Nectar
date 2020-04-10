@@ -3,7 +3,7 @@ $(document).scroll(function(){
   });
   (function () {
         var options = {
-            whatsapp: "+5491151402739", // WhatsApp number
+            whatsapp: "+5491154237204", // WhatsApp number
             call_to_action: "Hable con nosotros", // Call to action
             position: "right", // Position may be 'right' or 'left'
         };
