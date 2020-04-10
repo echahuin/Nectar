@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    
 <!-- Load required Bootstrap and BootstrapVue CSS -->
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
-
     <!-- Load polyfills to support older browsers -->
     <script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
-
     <!-- Load Vue followed by BootstrapVue -->
     <script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs@2.2.0/email.min.js"></script>
     <!-- Load the following for BootstrapVueIcons support -->
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
-
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -29,7 +23,8 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div id="app">
-    <div class=" navbar navbar-light fixed-top">
+    
+  <div class=" navbar navbar-light fixed-top">
       <div class="container">
         <img class="img-logo" src="./src/logo.png" alt="Logo de nectar">
       </div>
@@ -73,7 +68,7 @@
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Nombre</label>
-                <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" v-model="from_name">
                 <small id="nameHelp" class="form-text text-muted">Obtendra la demo del producto, y ofertas por temporada</small>
               </div>
               <div class="form-group">
@@ -81,10 +76,10 @@
                 <input type="email" class="form-control" id="exampleInputEmail">
               </div>
               <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="from_email">
                 <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button @click="enviar" class="btn btn-primary">Enviar</button>
             </form>
           </div>
           <div class="col-sm-3"></div>
