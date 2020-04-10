@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+/* @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css'); */
+/* *
+{
+    /* outline: none !important;
+    scroll-behavior: smooth; */
+/* }  */
+body {
+ font-family: 'poppins', sans-serfi;
+}
+header
+{
+    position: relative;
+    z-index: 1000000;
+}
+p
+{
+    font-size: 1rem;
+}
+input::-webkit-input-placeholder {
+    /* color:    #c00; */
+    -moz-text-size-adjust: 0.5fr;
+    font-weight: bold;
+}
+input::-moz-placeholder {
+    /* color:    #c00; */
+    -moz-text-size-adjust: 0.5fr;
+    font-weight: bold;
+}
+.navbar {
+    background: white;
+    transition: 0.8s;
+}
+.navbar.scrolled
+{
+    background: rgb(255, 255, 255) !important;
+    transition: 0.8s;
+}
+/*  */
+.producto {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/src/boda.png);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.banner:before,
+.sec2:before,
+.sec3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: linear-gradient(rgb(89, 186, 255), transparent);
+    pointer-events: none;
+}
+.banner:after,
+.sec2:after,
+.sec3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: linear-gradient(360deg,rgb(100, 169, 194), transparent);
+    pointer-events: none;
+}
+.height100p {
+    height: 100vh;
+}
+.h100 {
+    height: 100%;
+}
+.contentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 9.5rem;
+    z-index: 10;
+}
+.contentBox h1 {
+    font-weight: 800;
+    color: rgb(71, 209, 230);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.contentBox p {
+    color: rgb(65, 81, 81);
+    font-size: 1.3rem;
+}
+/*  */
+.col-dos {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0rem;
+}
+
+.sec1 {
+    padding: 100px 0;
+    background: rgb(255, 255, 255);
+   }
+   .headerText {
+    color: rgb(0, 0, 0);
+   }
+   .headerText h2 {
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+   }
+   .placeBox {
+    position: relative;
+    max-width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+   }
+   .placeBox imgBx {
+       width: 100%;
+       height: 100%;
+   }
+   .placeBox imgBx img{
+       object-fit: cover;
+       width: 100%;
+       height: 100%;
+   }
+   .placeBox .content {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 80%;
+       display: flex;
+       justify-content: baseline;
+       align-items: flex-end;
+   }
+   .placeBox .content h3 {
+       position: relative;
+       margin: 0;
+       padding: 10px;
+       background:  rgb(255, 255, 255);
+       color: rgb(80, 206, 220);
+       font-size: 20px;
+       font-weight: 600;
+       width: 100%;
+       text-align: center;
+   }
+   
+   .placeBox .content h3 span {
+       font-size: 16px;
+       font-weight: 500;
+   }
+.sec2 {
+    position: relative;
+    background: white;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.sec2 h2 {
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+}
+.footer {
+    background: rgb(48, 78, 88);
+    padding:  50px 0 0;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover {
+    color: #fff;
+}
+.cpryt {
+    margin-top: 20px;
+    text-align: center;
+    color:  rgb(0, 0, 0);
+}
+.cpryt a,
+.cpryt a:hover {
+    color: #fff;
+}
+* {box-sizing: border-box;}
+.img-logo {
+    display: block;
+    margin: auto;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0rem;
+    height: 7rem;
+}
+.img-venta {
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0rem;
+    height: 9rem;
+}
+.img-matri {
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0rem;
+    height: 13rem;
+}
+.vector {
+    display: block;
+    margin: auto;
+    height: 13.5rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.2rem;
+}
+@media (max-width: 992px) {
+    
+.col-dos {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0rem;
+}
+    .navbar-light .navbar-toggler {
+        background: #fff;
+        border-radius: 0;
+    }
+    .banner {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .contentBox h1,
+    .sec2 h2
+     {
+        font-size: 1.5rem;
+     }
+     .col-sm-6 {
+        position: relative;
+        width: 100%;  
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-top: 4rem;
+    }
+     .contentBox p
+     {
+        font-size: 0.8rem;
+        margin: 0.5rem;
+     }
+     .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .4rem;
+        padding-left: .4rem;
+   }
+   .sec1 {
+       padding: 7rem 0;
+   }
+   .headerText h2 {
+       font-size: 2rem;
+       margin-bottom: 20px;
+   }
+   .blog {
+       padding: 20px 0;
+   }
+   .blogspot .imgBx {
+       height: 200px;
+   }
+   .btnD1 {
+       padding: 10px 40px;
+       margin-top: 10px;
+   }
+   footer {
+       background: rgb(94, 198, 226);
+       padding: 0px 0 20px;
+   }
+   .sci  li {
+        list-style: none;
+        margin: 0 10px;
+   }
+   .sci li  a {
+       color: rgb(0, 0, 0);
+       font-size: 1.5rem;
+       transition: 0.5s;
+   }
+   .sec2 {
+        height: auto;
+        padding: 40px 0;
+    }
+}
+
+/* aqui tenemmos las tareas a hacer...  
+
+hacer una pagina para los terminos y condiciones.... 
+poner el link para que compre directamente el producto
+poner los skill de compra segura, producto bueno y etc,.. con los pngs que teniamos  gartis
+agregar detallles de como es mi producto.. español tipo etc...
+
+dinamico.. y tener los precios al alcanze y a la vista
+*/
