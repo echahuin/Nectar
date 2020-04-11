@@ -36,58 +36,112 @@
           <div class="row">
             <div class="col-sm-6">
               <img class="img-matri" src="./src/salva-matrimonio.png" alt="img-venta">
+              <h1 style="font-style: 'Alfa Slab One', cursive; color: darkgoldenrod; font-size: xx-large; ">USD$ 67,00.</h1>
+              <h1 style="font-style: 'Alfa Slab One', cursive; color: darkgoldenrod; text-decoration: line-through; font-size: medium; ">USD$ 150,00.</h1>
             </div>
             <div class="col-sm-6 col-dos">
-              <h1>Salva tu Matrimonio</h1>
+              <h1 data-aos="fade-up"
+              data-aos-delay="10"
+              data-aos-duration="5000">Salva tu Matrimonio</h1>
               <p>Salva Tu Matrimonio Para Siempre es un método práctico Paso-a-Paso, con “tareas” simples que deberás cumplir para solucionar los problemas y reconstruir tu matrimonio.</p>
-                <b-button href="#" variant="warning">Obtener el Producto</b-button>
+                <b-button href="https://go.hotmart.com/U26021585C" variant="warning">Obtener el Producto</b-button>
                 <p></p>
-                <b-button data-aos="fade-up"
-                data-aos-delay="0"
-                data-aos-duration="1000" href="#explore" variant="success">Obtener demo Gratis</b-button>
+                <b-button href="#explore" variant="success">Obtener demo Gratis</b-button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="sec1" id="explore">
+    <section class="sec1">
       <div class="container">
         <div class="row">
           <div class="offset-sm-2 col-sm-8">
             <div class="headerText text-center">
               <!-- <h1></h1> -->
-              <!-- <p>btener Demo GRATIS</p> -->
+              <p>¿por que confiar en nosotros?</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-up"
+              data-aos-delay="500"
+             data-aos-duration="1000" class="col-sm-4">
+             <div class="place-box2">
+              <div  class="imgBx">
+                <img src="src/sec.png " class="img-fluid">
+              </div>
+              <div class="content">
+                <h3 style="font-family: 'Alfa Slab One', cursive;" class="text-center">Seguridad</h3>
+              </div>
+             </div>
+            </div>
+          <div data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-duration="1000" class="col-sm-4">
+              <div class="place-box2">
+                <div  class="imgBx">
+                    <img src="src/fast.png " class="img-fluid">
+                  </div>
+                  <div class="content">
+                    <h3 style="font-family: 'Alfa Slab One', cursive;" class="text-center">Rapidez</h3>
+                  </div>
+              </div>
+            </div>
+          <div data-aos="fade-up"
+          data-aos-delay="900"
+          data-aos-duration="1000" class="col-sm-4">
+          <div class="place-box2">
+            <div  class="imgBx">
+              <img src="src/home.png " class="img-fluid">
+            </div>
+            <div class="content">
+              <h3 style="font-family: 'Alfa Slab One', cursive;" class="text-center">Comodidad</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec1" id="explore">
+      <div class="container">
+        <div class="row">
+          <div class="offset-sm-2 col-sm-8">
+            <div class="headerText text-center">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-3"></div>
           <div class="col-sm-6">
-            <h2 class="text-center">Obtener Demo GRATIS</h2>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nombre</label>
-                <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" v-model="from_name">
-                <small id="nameHelp" class="form-text text-muted">Obtendra la demo del producto, y ofertas por temporada</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Correo</label>
-                <input type="email" class="form-control" id="exampleInputEmail">
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="from_email">
-                <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
-              </div>
-              <button @click="enviar" class="btn btn-primary">Enviar</button>
-            </form>
+            <h2 class="text-center" style="font-style: 'Alfa Slab One', cursive; color: darkgoldenrod; font-size: xx-large;">Obtener Demo GRATIS</h2>
+            <div class="formu">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nombre</label>
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" v-model="from_name">
+                  <small id="nameHelp" class="form-text text-muted">Obtendra la demo del producto, y ofertas por temporada</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Correo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" v-model="from_email">
+                  <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
+                </div>
+                <button @click="enviar" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
           </div>
           <div class="col-sm-3"></div>
         </div>
       </div>
     </section>
     
-   <section class="sec1" id="explore">
+  
+  <section class="sec1" id="explore">
     <div class="container">
       <div class="row">
         <div class="offset-sm-2 col-sm-8">
